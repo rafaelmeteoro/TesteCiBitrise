@@ -17,4 +17,9 @@ class EmailValidatorTest {
     fun validate() {
         assertTrue(validator.validate("faelanjelus@gmail.com"))
     }
+
+    @Test
+    fun validateUnderscore() {
+        assertTrue(validator.validate("fael_anjelus@gmail.com"))
+    }
 }
