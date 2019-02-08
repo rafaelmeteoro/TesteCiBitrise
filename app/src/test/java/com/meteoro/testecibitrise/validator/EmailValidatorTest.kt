@@ -36,6 +36,6 @@ class EmailValidatorTest {
 
     @Test
     fun validateNoAt() {
-        assertTrue(validator.validate("faelanjelusgmail.com"))
+        assertFalse(validator.validate("faelanjelusgmail.com"))
     }
 }
