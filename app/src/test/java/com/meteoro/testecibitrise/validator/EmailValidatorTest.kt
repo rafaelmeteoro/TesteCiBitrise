@@ -33,4 +33,9 @@ class EmailValidatorTest {
     fun validateNotDot() {
         assertFalse(validator.validate("faelanjelus@gmailcom"))
     }
+
+    @Test
+    fun validateNoAt() {
+        assertTrue(validator.validate("faelanjelusgmail.com"))
+    }
 }
